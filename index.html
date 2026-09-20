@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanalakshmy V | Senior AI / ML Platform Engineer</title>
+    
+    <!-- Tailwind CSS CDN (v4) -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-1QBJSRDS7C');
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                DV.
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition">About</a>
+                <a href="#experience" class="hover:text-cyan-400 transition">Experience</a>
+                <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
+                <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
+                <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="./DLV_AI_ML_Engineer_Resume.pdf" 
+                   download="DLV_AI_ML_Engineer_Resume.pdf" 
+                   target="_blank" 
+                   onclick="gtag('event', 'click', { 'event_category': 'Resume', 'event_label': 'Resume Download' });"
+                   class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold px-4 py-2 rounded-lg text-sm transition shadow-lg shadow-cyan-500/20 inline-flex items-center space-x-2">
+                    <i class="fa-solid fa-download"></i>
+                    <span>Resume</span>
+                </a>
+                <a href="#contact" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold px-4 py-2 rounded-lg text-sm transition shadow-lg shadow-cyan-500/20 hidden sm:inline-block">
+                    Get in Touch
+                </a>
+            </div>
+        </div>
+    </nav>
+
+        <!-- HERO SECTION -->
+    <header class="pt-32 pb-16 text-center max-w-4xl mx-auto px-6">
+        <p class="text-slate-300 text-lg">Hi there, I'm</p>
+        <h1 class="text-4xl md:text-6xl font-bold text-cyan-400 tracking-wide my-2">
+            Dhanalakshmy
+        </h1>
+        <p class="text-slate-300 text-lg font-medium max-w-xl mx-auto pt-1 mb-6">
+            A passionate <span id="typewriter" class="text-cyan-400 font-semibold border-r-2 border-cyan-400 pr-1 animate-pulse"></span>
+        </p>
+
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">
+            Senior AI/ML Platform Engineer & <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Enterprise Architect</span>
+        </h2>
+        <p class="text-base md:text-lg text-slate-400 mb-8 leading-relaxed">
+            Senior AI/ML Platform Engineer and Enterprise Architect with 12+ years of experience designing, automating, and operationalizing scalable AI systems and cloud infrastructure across healthcare, banking, e-commerce, and retail. Proven expertise bridging platform engineering and AI enablement by deploying AWS-native architectures and modern Generative AI frameworks.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="#projects" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold px-6 py-3 rounded-xl transition shadow-lg shadow-cyan-500/20 flex items-center space-x-2">
+                <span>Explore Projects</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+            <a href="#contact" class="border border-slate-700 hover:border-slate-500 bg-slate-900/50 px-6 py-3 rounded-xl font-semibold transition">
+                Contact Me
+            </a>
+        </div>
+    </header>
+
+    <!-- TYPEWRITER SCRIPT -->
+    <script>
+        const roles = [
+            "AI Engineer",
+            "Data Scientist",
+            "AI/ML Engineer",
+            "AI Platform Engineer"
+        ];
+        
+        let roleIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingElement = document.getElementById("typewriter");
+
+        function typeEffect() {
+            const currentRole = roles[roleIndex];
+            
+            if (isDeleting) {
+                typingElement.textContent = currentRole.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingElement.textContent = currentRole.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let typeSpeed = isDeleting ? 50 : 100;
+
+            if (!isDeleting && charIndex === currentRole.length) {
+                typeSpeed = 2000;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                roleIndex = (roleIndex + 1) % roles.length;
+                typeSpeed = 500;
+            }
+
+            setTimeout(typeEffect, typeSpeed);
+        }
+
+        document.addEventListener("DOMContentLoaded", typeEffect);
+    </script>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 border-b border-slate-800/60 bg-slate-900/20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold mb-6 flex items-center space-x-3">
+                        <i class="fa-solid fa-user-shield text-cyan-400 text-xl"></i>
+                        <span>Professional Summary</span>
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed mb-4">
+                        Senior AI/ML Platform Engineer and Enterprise Architect with 12+ years of experience bridging platform engineering and AI enablement by deploying AWS-native architectures (Amazon Bedrock, SageMaker, Lambda, S3) and modern Generative AI frameworks (RAG, LangChain, LlamaIndex, Vector Databases, Agentic AI, MCP).
+                    </p>
+                    <p class="text-slate-300 leading-relaxed">
+                        Deep technical mastery in Infrastructure as Code (Terraform, CloudFormation), CI/CD DevOps pipelines, and enterprise AI Risk Management, ensuring low-latency, production-grade applications meeting HIPAA, GDPR, and regulatory standards.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-slate-900/80 border border-slate-800 p-6 rounded-2xl">
+                        <div class="text-3xl font-bold text-cyan-400 mb-1">12+</div>
+                        <div class="text-sm text-slate-400">Years Experience</div>
+                    </div>
+                    <div class="bg-slate-900/80 border border-slate-800 p-6 rounded-2xl">
+                        <div class="text-3xl font-bold text-cyan-400 mb-1">AWS & Azure</div>
+                        <div class="text-sm text-slate-400">Cloud Architecture</div>
+                    </div>
+                    <div class="bg-slate-900/80 border border-slate-800 p-6 rounded-2xl">
+                        <div class="text-3xl font-bold text-cyan-400 mb-1">RAG & GenAI</div>
+                        <div class="text-sm text-slate-400">Enterprise AI Models</div>
+                    </div>
+                    <div class="bg-slate-900/80 border border-slate-800 p-6 rounded-2xl">
+                        <div class="text-3xl font-bold text-cyan-400 mb-1">MLOps</div>
+                        <div class="text-sm text-slate-400">FastAPI, Docker, K8s</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="py-20 border-b border-slate-800/60">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-2xl md:text-3xl font-bold mb-12 text-center">Professional Experience</h2>
+                
+                <div class="space-y-8 max-w-4xl mx-auto">
+                    <!-- Illinois College of Optometry -->
+                    <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl relative pl-8 md:pl-10">
+                        <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-cyan-500 rounded-l-2xl"></div>
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Sr. AI/ML Engineer</h3>
+                                <p class="text-cyan-400 font-medium">Illinois College of Optometry – Chicago, IL</p>
+                            </div>
+                            <span class="text-xs font-semibold bg-slate-800 text-slate-300 px-3 py-1 rounded-full mt-2 md:mt-0 w-fit">Jan 2024 – Present</span>
+                        </div>
+                        <!-- Bullet Points Section -->
+        <ul class="list-disc list-inside space-y-2 text-slate-300 text-sm mb-4 leading-relaxed">
+            <li>Architected and deployed advanced machine learning models to automate clinical workflows and predictive diagnostics.</li>
+            <li>Deployed enterprise RAG architectures on AWS utilizing Amazon Bedrock, SageMaker, and Vector Databases.</li>
+            <li>Optimized large-scale data processing pipelines, reducing latency by 35% for production workloads.</li>
+            <li>Engineered predictive classification and regression models using XGBoost and LightGBM to forecast patient volume trends and appointment no-show risks.</li>
+            <li>Evaluated multi-cloud deployment strategies including Google Cloud Platform (GCP) and Vertex AI for scalable model training and low-latency inference.</li>
+            <li>Designed and operationalized enterprise RAG architectures on AWS utilizing Amazon Bedrock, Amazon SageMaker, and Vector Databases to automate clinical policy retrieval and operational workflows.</li>
+            <li>Engineered high-concurrency, asynchronous Python (Asyncio) microservices using FastAPI and Pydantic v2 data models, securing internal API endpoints via OAuth 2.0 and MSAL (Microsoft Authentication Library)</li>
+            <li>Optimized distributed feature processing and columnar storage across Delta Lake and Parquet using Ray and PySpark, driving a 35% reduction in model inference latency.</li>
+            <li>Developed time-series forecasting models using Prophet and statistical algorithms to predict surgical authorization timelines and operational bottlenecks.</li>
+            <li>Built vision-based OCR processing pipelines using OpenCV, AWS Textract, and Azure Document Intelligence to extract clinical data from unstructured documents.</li>
+            <li>Fine-tuned transformer-based NLP models using spaCy and Hugging Face to classify clinical EOB remark text and map unstructured entries accurately.</li>
+            <li>Implemented Agentic AI workflows and Model Context Protocol (MCP) integrations to connect internal LLM endpoints with clinical databases and REST APIs.</li>
+            <li>Constructed scalable data ingestion and feature engineering pipelines using PySpark and Delta Lake on Azure Databricks for distributed training.</li>
+            <li>Authored Terraform and CloudFormation modules to automate infrastructure deployment, IAM role provisioning, and CloudWatch monitoring across multi-tenant cloud environments.</li>
+            <li>Designed automated pre-billing validation engines incorporating deterministic machine learning logic trees for clean claim submissions.</li>
+            <li>Developed real-time RESTful inference microservices using Python and FastAPI to serve model predictions securely to clinical staff.</li>
+            <li>Integrated predictive analytics outputs and clinical performance indicators into interactive Power BI executive dashboards.</li>
+            <li>Implemented continuous AI Risk Management, AI Governance, and LLM evaluation frameworks to enforce enterprise security, data privacy, and HIPAA compliance.</li>
+            <li>Automated resolution of billing errors, boosting first-pass clean claim submission rates and reducing manual touchpoints by 70%.</li>
+            <li>Reduced manual payment posting cycles by 80% and accelerated accounts receivable turnaround times by 45% through automated pipelines.</li>
+            <li>Improved patient intake turnaround by 45% and reduced overall administrative processing overhead by 15% using predictive scoring.</li>
+            <li>Elevated claims data accuracy by 35% through automated code pre-validation and rigorous feature verification checks.</li>
+            <li>Enforced strict HIPAA compliance, role-based access control, and data encryption protocols across all production AI services.</li>
+            <li>Maintained comprehensive technical documentation, model validation reports, and pipeline schemas for cross-functional team handoffs.</li>
+            <b>Environment: Python, SQL, Azure Databricks, PySpark, FastAPI, OpenCV, NextGen PM/EMR, Delta Lake, Scikit-learn, XGBoost, LightGBM, Prophet, spaCy, Hugging Face, Power BI.</b>
+
+        </ul>
+                    
+                        
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">AWS Bedrock</span>
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">RAG</span>
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">FastAPI</span>
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">PySpark</span>
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Terraform</span>
+                        </div>
+                    </div>
+
+                    <!-- US Bank -->
+                    <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl relative pl-8 md:pl-10">
+                        <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-blue-500 rounded-l-2xl"></div>
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Senior AI/ML Developer</h3>
+                                <p class="text-blue-400 font-medium">US Bank – Cincinnati, OH</p>
+                            </div>
+                            <span class="text-xs font-semibold bg-slate-800 text-slate-300 px-3 py-1 rounded-full mt-2 md:mt-0 w-fit">Jan 2022 – Dec 2023</span>
+                        </div>
+                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                            <li>Designed and implemented distributed machine learning systems on Azure Databricks using PySpark, XGBoost, and Spark MLlib for financial analytics.<li>
+                            <li>Architected end-to-end anomaly detection frameworks on high-velocity transaction streams to identify fraudulent account activities in real time.</li>
+                            <li>Orchestrated scalable data pipelines using Azure Data Factory and Kafka streams to ingest high-volume enterprise customer data.</li>
+                            <li>Designed and implemented distributed machine learning systems on Azure Databricks using PySpark, XGBoost, and Spark MLlib for financial analytics. Architected end-to-end anomaly detection frameworks on high-velocity transaction streams to identify fraudulent account activities in real time. Orchestrated scalable data pipelines using Azure Data Factory and Kafka streams to ingest high-volume enterprise customer data. Pioneered NLP classification pipelines utilizing Hugging Face Transformers, spaCy, and NLTK across unstructured financial documents. Built centralized feature store pipelines using MLflow and Delta Lake to standardize feature computation and ensure model reproducibility.</li>
+                            <li>Implemented dynamic schema drift handling mechanisms within ingest pipelines to maintain streaming stability and minimize latency.</li>
+                            <li>Pioneered NLP classification pipelines utilizing Hugging Face Transformers, spaCy, and NLTK across unstructured financial documents.</li>
+                            <li>Containerized model inference and feature calculation microservices using FastAPI, Docker, and Azure App Services.</li>
+                            <li>Established CI/CD automation and automated unit/integration testing suites within Azure DevOps pipelines for rapid ML deployments.</li>
+                            <li>Built centralized feature store pipelines using MLflow and Delta Lake to standardize feature computation and ensure model reproducibility.</li>
+                            <li>Automated statistical profiling, distribution validation, and model explainability checks (SHAP) for internal risk compliance.</li>
+                            <li>Maintained exhaustive model registries and documentation to strictly align with federal banking and financial regulations.</li>
+                            <li>Synthesized predictive scores, confidence intervals, and model performance KPIs into interactive Power BI dashboards for executives.</li>
+                            <li>Spearheaded A/B testing frameworks and experimental design strategies to evaluate model performance and lift in production.</li>
+                            <li>Optimized Spark MLlib job performance using broadcast joins and vectorization, reducing model training runtimes by 35%.</li>
+                            <li>Reduced streaming data processing latency by 25% across high-throughput Kafka feeds through pipeline optimizations.</li>
+                            <li>Accelerated document processing and audit compliance workflows by 40% via automated Transformer-based entity extraction.</li>
+                            <b>Environment: Python, PySpark, Azure Databricks, Azure Data Factory, Delta Lake, Spark MLlib, Scikit-learn, XGBoost, spaCy, NLTK, Hugging Face Transformers, FastAPI, Docker, Power BI, SQL Server, MLflow, Azure DevOps.</b>
+
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Azure Databricks</span>
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Kafka</span>
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">MLflow</span>
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">XGBoost</span>
+                        </div>
+                    </div>
+
+                    <!-- Wayfair -->
+                    <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl relative pl-8 md:pl-10">
+                        <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-indigo-500 rounded-l-2xl"></div>
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Senior Data Scientist / AI Engineer</h3>
+                                <p class="text-indigo-400 font-medium">Wayfair – Boston, MA</p>
+                            </div>
+                            <span class="text-xs font-semibold bg-slate-800 text-slate-300 px-3 py-1 rounded-full mt-2 md:mt-0 w-fit">Jan 2020 – Dec 2021</span>
+                        </div>
+                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                            <li>Designed end-to-end machine learning workflows using Scikit-learn, XGBoost, and LightGBM to detect high-risk e-commerce transactions. Orchestrated Generative AI workflows using LangChain, LlamaIndex, and Hugging Face.</li>
+                            <li>Developed custom feature engineering pipelines to extract behavioral patterns and device fingerprints from customer purchase histories.</li>
+                            <li>Built NLP pipelines using spaCy, Hugging Face Transformers, and NLTK to parse customer reviews and support tickets for sentiment analysis.</li>
+                            <li>Constructed distributed PySpark and SQL pipelines on Delta Lake to process high-volume customer session and clickstream data.</li>
+                            <li>Engineered batch and real-time model scoring engines to deliver instant checkout risk evaluations without latency bottlenecks.</li>
+                            <li>Orchestrated Generative AI workflows using LangChain, LlamaIndex, and Hugging Face to parse customer tickets, execute real-time intent classification, and feed downstream agent toolkits</li>
+                            <li>Deployed low-latency inference microservices using Docker, Kubernetes (AKS/EKS), FastAPI, and REST APIs for real-time risk scoring.</li>
+                            <li>Integrated MLflow and Azure Monitor to continuously track model accuracy, performance stability, and drift in production.</li>
+                            <li>Built automated drift detection scripts to monitor data distribution shifts and trigger retraining workflows when thresholds were breached.</li>
+                            <li>Conducted GenAI prompt engineering proofs-of-concept to summarize long customer interaction threads and assist support agents.</li>
+                            <li>Built interactive Power BI and Tableau dashboards to visualize fraud loss trends, model confidence scores, and return metrics.</li>
+                            <li>Collaborated with cross-functional risk and payments teams to align model predictions with business operational strategies.</li>
+                            <li>Reduced fraudulent order processing overhead by 22% while maintaining exceptionally low false-positive rates.</li>
+                            <li>Orchestrated Generative AI workflows using LangChain, LlamaIndex, and Hugging Face to parse support tickets, execute real-time intent classification, and perform prompt engineering proofs-of-concept for automated customer interaction summaries.</li>
+                            <li>Accelerated model training cycles by 30% through PySpark partition optimization and Delta Lake storage pattern refinements.</li>
+                            <li>Improved support ticket triage velocity by 35% using automated Transformer-based intent mapping and entity extraction.</li>
+                            <li>Enforced robust data governance frameworks to ensure customer data handling complied fully with GDPR and CCPA standards.</li>
+                            <b>Environment: Python, Scikit-learn, XGBoost, LightGBM, spaCy, Hugging Face, Pandas, NumPy, SQL, Spark, PySpark, Delta Lake, MLflow, Azure Monitor, Docker, Kubernetes, FastAPI, Power BI, Tableau.</b>
+
+                        </p>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">LangChain</span>
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Kubernetes</span>
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Docker</span>
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">PySpark</span>
+                        </div>
+                    </div>
+
+                    <!-- Sprint -->
+                    <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl relative pl-8 md:pl-10">
+                        <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-purple-500 rounded-l-2xl"></div>
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Machine Learning Developer</h3>
+                                <p class="text-purple-400 font-medium">Sprint – Kansas City, MO</p>
+                            </div>
+                            <span class="text-xs font-semibold bg-slate-800 text-slate-300 px-3 py-1 rounded-full mt-2 md:mt-0 w-fit">May 2018 – Dec 2019</span>
+                        </div>
+                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                            <li>Modernized telecom data pipelines using Python, SQL Server, SSIS, and Azure Storage to ingest high-volume network performance logs.</li>
+                            <li>Developed predictive models and time-series algorithms in Python using Pandas, NumPy, and Scikit-learn for subscriber churn scoring.</li>
+                            <li>Formulated network traffic load estimation models to help infrastructure teams proactively optimize bandwidth and cell capacity.</li>
+                            <li>Engineered scalable data transformation workflows, star schema data marts, and indexed SQL views for analytical query processing.</li>
+                            <li>Built automated statistical validation and schema drift checks using Python scripts and SQL constraints to maintain pipeline integrity.</li>
+                            <li>secure RESTful microservices in Python with role-based access controls to serve model predictions to internal tools.</li>
+                            <li>Designed and executed automated ETL validation test suites to verify data accuracy across legacy and cloud environments.</li>
+                            <li>Built interactive Power BI dashboards using DAX to visualize network performance KPIs and customer retention trends.</li>
+                            <li>Partnered with business analysts to convert complex telecommunications insights into actionable subscriber retention strategies.</li>
+                            <li>Optimized SQL Server stored procedures and query indexing strategies to significantly streamline database read/write performance.</li>
+                            <li>Reduced batch ETL processing windows by 28% through advanced SQL query tuning and pipeline architectural redesign.</li>
+                            <li>Enhanced predictive model reliability, enabling retention teams to target high-risk subscriber accounts with targeted campaigns.</li>
+                            <li>Accelerated daily operational reporting cycles by 35% through automated dimensional updates and scheduled orchestration.</li>
+                            <li>Managed database access controls and security protocols to safeguard sensitive customer usage data and proprietary metrics.</li>
+                            <li>Maintained detailed technical documentation for all ML models, ETL pipelines, and microservice integration endpoints.</li>
+                            <b>Environment: Python, SQL Server, SSIS, Pandas, NumPy, Scikit-learn, REST APIs, Power BI, DAX, Stored Procedures, Index Optimization, Azure Storage, Git.</b>
+
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Python</span>
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">SQL Server</span>
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Scikit-learn</span>
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Power BI</span>
+                        </div>
+                    </div>
+
+                    <!-- Reliance Retail -->
+                    <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl relative pl-8 md:pl-10">
+                        <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-emerald-500 rounded-l-2xl"></div>
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Data Engineer & ML Developer</h3>
+                                <p class="text-emerald-400 font-medium">Reliance Retail – Mumbai, IN</p>
+                            </div>
+                            <span class="text-xs font-semibold bg-slate-800 text-slate-300 px-3 py-1 rounded-full mt-2 md:mt-0 w-fit">June 2010 – May 2016</span>
+                        </div>
+                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                            <li>Architected fault-tolerant batch and near-real-time data processing pipelines on AWS EMR using Spark and PySpark for retail datasets.</li> 
+                            <li>time-series features and applied XGBoost and Scikit-learn models to optimize regional inventory allocation.</li>
+                            <li>Formulated dynamic marketplace pricing models using historical sales data and demand fluctuation analytics to maximize profit margins.</li>
+                            <li>Optimized distributed processing performance by restructuring join strategies on AWS EMR and converting feeds into Parquet formats.</li>
+                            <li>Built serverless microservices using AWS Lambda, API Gateway, DynamoDB, and Step Functions to orchestrate downstream ML pipelines.</li>
+                            <li>Implemented automated schema validation and monitoring scripts integrated with AWS CloudWatch to ensure high data integrity.</li>
+                            <li>Established automated data quality alerts to identify missing values, schema mismatches, and pipeline execution failures.</li>
+                            <li>Partnered with product and engineering teams to establish cloud platform best practices and standardize data science deployments.</li>
+                            <li>Constructed centralized data repository architectures using AWS S3 and Redshift to consolidate store sales and inventory data.</li>
+                            <li>Designed custom SQL queries and analytical data views to support ad-hoc reporting requests from retail category managers.</li>
+                            <li>Automated serverless cloud architecture provisioning (AWS Lambda, API Gateway, Amazon S3) using AWS CloudFormation and Terraform pipelines.</li>
+                            <li>Built interactive QuickSight dashboards to provide management with visibility into real-time inventory and sales velocity.</li>
+                            <li>Reduced EMR cluster processing runtimes and compute costs by 30% through Parquet partitioning and join optimizations.</li>
+                            <li>Improved demand forecasting accuracy, driving optimal stock levels and reducing stockout occurrences across store categories.</li>
+                            <li>Achieved 99.9% data pipeline availability across supply chain workflows through automated CloudWatch alerting and validation.</li>
+                            <li>Participated in full SDLC following Agile methodologies, conducting code reviews and sprint planning session.</li>
+                            <b>Environment: Python, SQL, AWS EMR, Spark, PySpark, AWS S3, AWS Lambda, API Gateway, DynamoDB, Step Functions, CloudWatch, Parquet, Redshift, QuickSight, Git, Linux, Jira.</b>
+
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">AWS EMR</span>
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">PySpark</span>
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">XGBoost</span>
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Terraform</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- PROJECTS / EXPERIENCE SECTION -->
+    <section id="experience" class="py-16 px-4 max-w-5xl mx-auto">
+        <div id="projects">
+        <h2 class="text-3xl font-bold text-purple-400 mb-8 text-center tracking-wide">Experience & Projects</h2>
+        
+        <div class="space-y-8">
+            
+            <!-- Project 1: Illinois College of Optometry -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-lg">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                    <h3 class="text-xl font-semibold text-cyan-400">Sr. AI/ML Engineer <span class="text-slate-400 font-normal">@ Illinois College of Optometry</span></h3>
+                    <span class="text-sm text-slate-400">Jan 2024 – Present</span>
+                </div>
+                <ul class="list-disc list-inside text-slate-300 space-y-2 text-sm leading-relaxed">
+                    <li>Architected and deployed enterprise RAG architectures on AWS utilizing Amazon Bedrock, SageMaker, and Vector Databases to automate clinical data operations and policy retrieval.</li>
+                    <li>Engineered high-concurrency, asynchronous Python (Asyncio) microservices using FastAPI and Pydantic v2 data models, securing internal API endpoints via OAuth 2.0 and MSAL.</li>
+                    <li>Optimized distributed feature processing and columnar storage across Delta Lake and Parquet using Ray and PySpark, driving a 35% reduction in model inference latency.</li>
+                    <li>Implemented Agentic AI workflows and Model Context Protocol (MCP) integrations to connect internal LLM endpoints with clinical databases and REST APIs.</li>
+                </ul>
+            </div>
+
+            <!-- Project 2: US Bank -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-lg">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                    <h3 class="text-xl font-semibold text-cyan-400">Senior AI/ML Developer <span class="text-slate-400 font-normal">@ US Bank</span></h3>
+                    <span class="text-sm text-slate-400">Jan 2022 – Dec 2023</span>
+                </div>
+                <ul class="list-disc list-inside text-slate-300 space-y-2 text-sm leading-relaxed">
+                    <li>Designed and implemented distributed machine learning systems on Azure Databricks using PySpark, XGBoost, and Spark MLlib for financial analytics.</li>
+                    <li>Architected end-to-end anomaly detection frameworks on high-velocity transaction streams to identify fraudulent account activities in real time.</li>
+                    <li>Pioneered NLP classification pipelines utilizing Hugging Face Transformers, spaCy, and NLTK across unstructured financial documents.</li>
+                    <li>Built centralized feature store pipelines using MLflow and Delta Lake to standardize feature computation and ensure model reproducibility.</li>
+                </ul>
+            </div>
+
+            <!-- Project 3: Wayfair -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-lg">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                    <h3 class="text-xl font-semibold text-cyan-400">Senior Data Scientist / AI Engineer <span class="text-slate-400 font-normal">@ Wayfair</span></h3>
+                    <span class="text-sm text-slate-400">Jan 2020 – Dec 2021</span>
+                </div>
+                <ul class="list-disc list-inside text-slate-300 space-y-2 text-sm leading-relaxed">
+                    <li>Designed end-to-end machine learning workflows using Python, Scikit-learn, XGBoost, and LightGBM to detect high-risk e-commerce transactions.</li>
+                    <li>Orchestrated Generative AI workflows using LangChain, LlamaIndex, and Hugging Face to parse customer support tickets and execute real-time intent classification.</li>
+                    <li>Deployed low-latency inference microservices using Docker, Kubernetes (AKS/EKS), FastAPI, and REST APIs for real-time risk scoring.</li>
+                    <li>Integrated MLflow and Azure Monitor to continuously track model accuracy, performance stability, and drift in production.</li>
+                </ul>
+            </div>
+
+            <!-- Project 4: Sprint -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-lg">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                    <h3 class="text-xl font-semibold text-cyan-400">Machine Learning Developer <span class="text-slate-400 font-normal">@ Sprint</span></h3>
+                    <span class="text-sm text-slate-400">May 2018 – Dec 2019</span>
+                </div>
+                <ul class="list-disc list-inside text-slate-300 space-y-2 text-sm leading-relaxed">
+                    <li>Modernized telecom data pipelines using Python, SQL Server, SSIS, and Azure Storage to ingest high-volume network performance logs.</li>
+                    <li>Developed predictive models and time-series algorithms in Python using Pandas, NumPy, and Scikit-learn for subscriber churn scoring.</li>
+                    <li>Developed secure RESTful microservices in Python with role-based access controls to serve model predictions to internal tools.</li>
+                </ul>
+            </div>
+
+            <!-- Project 5: Reliance Retail -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-lg">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                    <h3 class="text-xl font-semibold text-cyan-400">Data Engineer & ML Developer <span class="text-slate-400 font-normal">@ Reliance Retail</span></h3>
+                    <span class="text-sm text-slate-400">June 2010 – May 2016</span>
+                </div>
+                <ul class="list-disc list-inside text-slate-300 space-y-2 text-sm leading-relaxed">
+                    <li>Architected fault-tolerant batch and near-real-time data processing pipelines on AWS EMR using Spark and PySpark for retail datasets.</li>
+                    <li>Engineered complex time-series features and applied XGBoost and Scikit-learn models to optimize regional inventory allocation.</li>
+                    <li>Built serverless microservices using AWS Lambda, API Gateway, DynamoDB, and Step Functions to orchestrate downstream ML pipelines.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    
+        <!-- SKILLS SECTION -->
+    <section id="skills" class="py-16 px-4 max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold text-purple-400 mb-8 text-center tracking-wide">Technical Skills</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- Skill Category Card 1 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 shadow-md">
+                <h3 class="text-lg font-semibold text-cyan-400 mb-2">Core AI & Machine Learning</h3>
+                <p class="text-slate-300 text-sm">Predictive Modeling, Supervised/Unsupervised Learning, Ensemble Methods, XGBoost, LightGBM, Random Forest, SVM, K-Means, Time Series (Prophet, ARIMA).
+            </p>
+            </div>
+
+            <!-- Skill Category Card 2 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 shadow-md">
+                <h3 class="text-lg font-semibold text-cyan-400 mb-2">Deep Learning & Frameworks</h3>
+                <p class="text-slate-300 text-sm">PyTorch, TensorFlow, Keras, Neural Networks, CNN, RNN, LSTM, Transformers, Hugging Face, Fine-Tuning.</p>
+            </div>
+
+            <!-- Skill Category Card 3 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 shadow-md">
+                <h3 class="text-lg font-semibold text-cyan-400 mb-2">Programming & APIs</h3>
+                <p class="text-slate-300 text-sm">Python (Pandas, NumPy, SciPy, Scikit-learn), SQL, R, Async Python (Asyncio), Pydantic v2, FastAPI, REST APIs, Microservices.</p>
+            </div>
+
+            <!-- Skill Category Card 4 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 shadow-md">
+                <h3 class="text-lg font-semibold text-cyan-400 mb-2">Big Data & Distributed ML</h3>
+                <p class="text-slate-300 text-sm">Spark, PySpark, Databricks, Spark MLlib, Azure Data Factory, AWS EMR, Snowflake, Ray, Delta Lake, Parquet Optimization.</p>
+            </div>
+
+            <!-- Skill Category Card 5 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 shadow-md">
+                <h3 class="text-lg font-semibold text-cyan-400 mb-2">MLOps & Cloud Deployment</h3>
+                <p class="text-slate-300 text-sm">MLflow, Docker, Kubernetes, CI/CD, AWS SageMaker, Azure ML, GCP Vertex AI, Terraform, CloudFormation.</p>
+            </div>
+
+            <!-- Skill Category Card 6 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 shadow-md">
+                <h3 class="text-lg font-semibold text-cyan-400 mb-2">NLP & GenAI</h3>
+                <p class="text-slate-300 text-sm">RAG, LangChain, LlamaIndex, Vector Databases, Agentic AI, MCP, spaCy, NLTK, Hugging Face Transformers, Semantic Search.</p>
+            </div>
+
+        </div>
+    </section>
+
+        <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-slate-900/20">
+            <div class="max-w-7xl mx-auto px-6 text-center max-w-2xl">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">Let's Connect</h2>
+                <p class="text-slate-400 mb-8">Interested in discussing Senior AI/ML Platform roles, cloud infrastructure architectures, or enterprise ML systems? Reach out directly!</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4 text-slate-300 font-medium">
+                    <a href="mailto:vasilanka1222@gmail.com" class="bg-slate-900 border border-slate-800 hover:border-cyan-500/50 px-6 py-3 rounded-xl transition flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-envelope text-cyan-400"></i>
+                        <span>vasilanka1222@gmail.com</span>
+                    </a>
+                    <a href="tel:+13126250368" class="bg-slate-900 border border-slate-800 hover:border-cyan-500/50 px-6 py-3 rounded-xl transition flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-phone text-cyan-400"></i>
+                        <span>+1 312-625-0368</span>
+                    </a>
+                    <a href="https://github.com/Dhana23Royal" target="_blank" class="bg-slate-900 border border-slate-800 hover:border-cyan-500/50 px-6 py-3 rounded-xl transition flex items-center justify-center space-x-2">
+                        <i class="fa-brands fa-github text-cyan-400"></i>
+                        <span>GitHub Profile</span>
+                    </a>
+                    <a href ="https://www.linkedin.com/in/dhanalakshmy-datascientist" target="_blank" class="bg-slate-900 border border-slate-800 hover:border-cyan-500/50 px-6 py-3 rounded-xl transition flex items-center justify-center space-x-2">
+                        <i class="fa-brands fa-linkedin text-cyan-400"></i>
+                        <span>Linkedin Profile</span>
+                    </a>
+                </div>
+            </div>
+    </section>
+
+        <!-- FOOTER -->
+        <footer class="py-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+            <p>&copy; 2026 Dhanalakshmy V. All rights reserved.</p>
+        </footer>
+
+        <!-- FLOATING CHATBOT WIDGET -->
+        <div id="chat-widget" class="fixed bottom-6 right-6 z-50">
+            <!-- Chat Toggle Button -->
+            <button id="chat-toggle" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-2xl transition transform hover:scale-105 focus:outline-none">
+                <i class="fa-solid fa-robot"></i>
+            </button>
+
+            <!-- Chat Window -->
+            <div id="chat-window" class="hidden absolute bottom-20 right-0 w-80 md:w-96 bg-slate-900 border border-slate-800 rounded-2xl shadow-2xl overflow-hidden flex flex-col h-[450px]">
+                <!-- Chat Header -->
+                <div class="bg-slate-950 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-3 h-3 rounded-full bg-cyan-400 animate-pulse"></div>
+                        <span class="font-bold text-sm text-slate-200">Dhanalakshmy's AI Assistant</span>
+                    </div>
+                    <button id="chat-close" class="text-slate-400 hover:text-white text-sm">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <!-- Chat Messages Container -->
+                <div id="chat-messages" class="flex-1 p-4 overflow-y-auto space-y-3 text-sm">
+                    <div class="bg-slate-800/80 p-3 rounded-xl max-w-[85%] text-slate-300">
+                        Hi! I'm Dhanalakshmy's virtual assistant. Ask me anything about her 12+ years of experience across ICO, US Bank, Wayfair, Sprint, Reliance Retail, or her Banking AI Suite!
+                    </div>
+                </div>
+
+                <!-- Quick Prompt Suggestions -->
+                <div class="px-3 py-2 bg-slate-950/50 border-t border-slate-800/60 flex gap-1.5 overflow-x-auto text-xs">
+                    <button class="quick-prompt bg-slate-800 hover:bg-slate-700 text-slate-300 px-2.5 py-1 rounded-lg whitespace-nowrap transition">What is her experience?</button>
+                    <button class="quick-prompt bg-slate-800 hover:bg-slate-700 text-slate-300 px-2.5 py-1 rounded-lg whitespace-nowrap transition">Banking AI Suite</button>
+                    <button class="quick-prompt bg-slate-800 hover:bg-slate-700 text-slate-300 px-2.5 py-1 rounded-lg whitespace-nowrap transition">Tech Stack</button>
+                </div>
+
+                <!-- Chat Input Form -->
+                <form id="chat-form" class="p-3 bg-slate-950 border-t border-slate-800 flex items-center space-x-2">
+                    <input id="chat-input" type="text" placeholder="Type a message..." class="flex-1 bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-sm text-slate-100 focus:outline-none focus:border-cyan-500">
+                    <button type="submit" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 px-4 py-2 rounded-xl text-sm font-semibold transition">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- CHATBOT INTERACTION SCRIPT -->
+        <script>
+            const chatToggle = document.getElementById('chat-toggle');
+            const chatWindow = document.getElementById('chat-window');
+            const chatClose = document.getElementById('chat-close');
+            const chatForm = document.getElementById('chat-form');
+            const chatInput = document.getElementById('chat-input');
+            const chatMessages = document.getElementById('chat-messages');
+            const quickPrompts = document.querySelectorAll('.quick-prompt');
+
+            // Toggle chat window visibility
+            chatToggle.addEventListener('click', () => {
+                chatWindow.classList.toggle('hidden');
+                if (!chatWindow.classList.contains('hidden')) {
+                    chatInput.focus();
+                }
+            });
+
+            chatClose.addEventListener('click', () => {
+                chatWindow.classList.add('hidden');
+            });
+
+            // Knowledge Base Simulator for Chatbot
+            function getBotResponse(query) {
+                const q = query.toLowerCase();
+                if (q.includes('experience') || q.includes('background') || q.includes('years')) {
+                    return "Dhanalakshmy has 12+ years of experience spanning Illinois College of Optometry, US Bank, Wayfair, Sprint, and Reliance Retail, specializing in scalable AI platforms, RAG architectures, and distributed systems.";
+                } else if (q.includes('banking') || q.includes('project') || q.includes('fraud') || q.includes('suite')) {
+                    return "Her Banking AI Suite project features real-time transaction fraud detection using SMOTE class balancing and Random Forest, alongside a Credit Risk Loan Default predictor, packaged into an interactive Streamlit app!";
+                } else if (q.includes('tech') || q.includes('skills') || q.includes('stack') || q.includes('python')) {
+                    return "Her core tech stack includes Python, PyTorch, TensorFlow, Scikit-Learn, AWS (Bedrock, SageMaker, EMR), Azure Databricks, Delta Lake, FastAPI, Docker, Kubernetes, Terraform, and LangChain.";
+                } else if (q.includes('contact') || q.includes('email') || q.includes('phone') || q.includes('reach')) {
+                    return "You can reach Dhanalakshmy via email at vasilanka1222@gmail.com or by phone at +1 312-625-0368.";
+                } else {
+                    return "That's a great question! Dhanalakshmy is an expert AI/ML Platform Engineer with 12+ years in cloud and machine learning. You can explore her work history above or reach out directly at vasilanka1222@gmail.com.";
+                }
+            }
+
+            function appendMessage(sender, text) {
+                const msgDiv = document.createElement('div');
+                if (sender === 'user') {
+                    msgDiv.className = "bg-cyan-500 text-slate-950 p-3 rounded-xl max-w-[85%] ml-auto font-medium";
+                } else {
+                    msgDiv.className = "bg-slate-800/80 p-3 rounded-xl max-w-[85%] text-slate-300";
+                }
+                msgDiv.textContent = text;
+                chatMessages.appendChild(msgDiv);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+
+            chatForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const text = chatInput.value.trim();
+                if (!text) return;
+
+                appendMessage('user', text);
+                chatInput.value = '';
+
+                setTimeout(() => {
+                    const response = getBotResponse(text);
+                    appendMessage('bot', response);
+                }, 600);
+            });
+
+            quickPrompts.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const text = btn.textContent;
+                    appendMessage('user', text);
+                    setTimeout(() => {
+                        const response = getBotResponse(text);
+                        appendMessage('bot', response);
+                    }, 600);
+                });
+            });
+        </script>
+    </body>
+    </html>

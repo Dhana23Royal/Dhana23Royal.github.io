@@ -19,6 +19,33 @@
         gtag('js', new Date());
         gtag('config', 'G-1QBJSRDS7C');
     </script>
+    <script>
+       function toggleExperience(button) {
+        // 1. Find the outer card box no matter how deep the button is nested inside it
+        const card = button.closest('.bg-slate-900\\/60');
+        
+        if (!card) {
+            console.error("Could not find the parent card container!");
+            return;
+        }
+
+        // 2. Find the hidden content specifically inside THIS card
+        const moreContent = card.querySelector('.more-experience');
+        
+        if (moreContent) {
+            // Toggle visibility
+            if (moreContent.style.display === "none" || moreContent.style.display === "") {
+                moreContent.style.display = "block";
+                button.textContent = "See Less";
+            } else {
+                moreContent.style.display = "none";
+                button.textContent = "See More";
+            }
+        } else {
+            console.error("Could not find '.more-experience' inside this card.", card);
+        }
+    }
+    </script>
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950">
 
@@ -163,6 +190,7 @@
                 <h2 class="text-2xl md:text-3xl font-bold mb-12 text-center">Professional Experience</h2>
                 
                 <div class="space-y-8 max-w-4xl mx-auto">
+                
                     
                     <!-- Illinois College of Optometry -->
                     <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl relative pl-8 md:pl-10">
@@ -179,9 +207,10 @@
                             <!-- First 2 bullet points (always visible) --> 
                             <li>Architected and deployed advanced machine learning models to automate clinical workflows and predictive diagnostics.</li>
                             <li>Deployed enterprise RAG architectures on AWS utilizing Amazon Bedrock, SageMaker, and Vector Databases.</li>
-                            
-                            <!-- Remaining bullet points hidden by default -->
-                            <div class="more-experience" style="display: none;">
+                        </ul> 
+                        <!-- Remaining bullet points hidden by default -->
+                        <div class="more-experience" style="display: none;">
+                            <ul class="list-disc list-inside space-y-2 text-slate-300 text-sm mb-4 leading-relaxed">
                                 <li>Optimized large-scale data processing pipelines, reducing latency by 35% for production workloads.</li>
                                 <li>Engineered predictive classification and regression models using XGBoost and LightGBM to forecast patient volume trends and appointment no-show risks.</li>
                                 <li>Evaluated multi-cloud deployment strategies including Google Cloud Platform (GCP) and Vertex AI for scalable model training and low-latency inference.</li>
@@ -204,13 +233,17 @@
                                 <li>Elevated claims data accuracy by 35% through automated code pre-validation and rigorous feature verification checks.</li>
                                 <li>Enforced strict HIPAA compliance, role-based access control, and data encryption protocols across all production AI services.</li>
                                 <li>Maintained comprehensive technical documentation, model validation reports, and pipeline schemas for cross-functional team handoffs.</li>
-                                <br><b>Environment: Python, SQL, Azure Databricks, PySpark, FastAPI, OpenCV, NextGen PM/EMR, Delta Lake, Scikit-learn, XGBoost, LightGBM, Prophet, spaCy, Hugging Face, Power BI.</b>
-                            </div>
-                        </ul>
-
+                                <p class="text-slate-300 text-sm mt-4"><b>Environment: Python, SQL, Azure Databricks, PySpark, FastAPI, OpenCV, NextGen PM/EMR, Delta Lake, Scikit-learn, XGBoost, LightGBM, Prophet, spaCy, Hugging Face, Power BI.</b></p>
+                            </ul>
+                        </div>
+                            
                         <!-- Toggle Button -->
-                        <button onclick="toggleExperience(this)" class="see-more-btn text-xs text-cyan-400 font-semibold mb-4 hover:underline">See More</button>
+                        <button onclick="toggleExperience(this)" class="see-more-btn text-xs text-blue-400 font-semibold mb-4 hover:underline">See More</button>
+                            
+                         
+                    
 
+                        
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">AWS Bedrock</span>
                             <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">RAG</span>
@@ -219,7 +252,7 @@
                             <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Terraform</span>
                         </div>
                     </div>
-
+                    
                     <!-- US Bank -->
                     <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl relative pl-8 md:pl-10">
                         <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-blue-500 rounded-l-2xl"></div>

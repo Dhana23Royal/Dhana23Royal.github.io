@@ -54,7 +54,7 @@
         <!-- HERO SECTION -->
     <header class="pt-32 pb-16 text-center max-w-4xl mx-auto px-6">
         <p class="text-slate-300 text-lg">Hi there, I'm</p>
-        <h1 class="text-4xl md:text-6xl font-bold text-cyan-400 tracking-wide my-2">
+        <h1 class="text-4xl md:text-6xl text-purple-400 font-bold text-cyan-400 tracking-wide my-2">
             Dhanalakshmy
         </h1>
         <p class="text-slate-300 text-lg font-medium max-w-xl mx-auto pt-1 mb-6">
@@ -157,13 +157,13 @@
             </div>
         </div>
     </section>
-
-        <!-- EXPERIENCE SECTION -->
+    <!-- EXPERIENCE SECTION -->
         <section id="experience" class="py-20 border-b border-slate-800/60">
             <div class="max-w-7xl mx-auto px-6">
                 <h2 class="text-2xl md:text-3xl font-bold mb-12 text-center">Professional Experience</h2>
                 
                 <div class="space-y-8 max-w-4xl mx-auto">
+                    
                     <!-- Illinois College of Optometry -->
                     <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl relative pl-8 md:pl-10">
                         <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-cyan-500 rounded-l-2xl"></div>
@@ -174,38 +174,43 @@
                             </div>
                             <span class="text-xs font-semibold bg-slate-800 text-slate-300 px-3 py-1 rounded-full mt-2 md:mt-0 w-fit">Jan 2024 – Present</span>
                         </div>
-                        <!-- Bullet Points Section -->
-        <ul class="list-disc list-inside space-y-2 text-slate-300 text-sm mb-4 leading-relaxed">
-            <li>Architected and deployed advanced machine learning models to automate clinical workflows and predictive diagnostics.</li>
-            <li>Deployed enterprise RAG architectures on AWS utilizing Amazon Bedrock, SageMaker, and Vector Databases.</li>
-            <li>Optimized large-scale data processing pipelines, reducing latency by 35% for production workloads.</li>
-            <li>Engineered predictive classification and regression models using XGBoost and LightGBM to forecast patient volume trends and appointment no-show risks.</li>
-            <li>Evaluated multi-cloud deployment strategies including Google Cloud Platform (GCP) and Vertex AI for scalable model training and low-latency inference.</li>
-            <li>Designed and operationalized enterprise RAG architectures on AWS utilizing Amazon Bedrock, Amazon SageMaker, and Vector Databases to automate clinical policy retrieval and operational workflows.</li>
-            <li>Engineered high-concurrency, asynchronous Python (Asyncio) microservices using FastAPI and Pydantic v2 data models, securing internal API endpoints via OAuth 2.0 and MSAL (Microsoft Authentication Library)</li>
-            <li>Optimized distributed feature processing and columnar storage across Delta Lake and Parquet using Ray and PySpark, driving a 35% reduction in model inference latency.</li>
-            <li>Developed time-series forecasting models using Prophet and statistical algorithms to predict surgical authorization timelines and operational bottlenecks.</li>
-            <li>Built vision-based OCR processing pipelines using OpenCV, AWS Textract, and Azure Document Intelligence to extract clinical data from unstructured documents.</li>
-            <li>Fine-tuned transformer-based NLP models using spaCy and Hugging Face to classify clinical EOB remark text and map unstructured entries accurately.</li>
-            <li>Implemented Agentic AI workflows and Model Context Protocol (MCP) integrations to connect internal LLM endpoints with clinical databases and REST APIs.</li>
-            <li>Constructed scalable data ingestion and feature engineering pipelines using PySpark and Delta Lake on Azure Databricks for distributed training.</li>
-            <li>Authored Terraform and CloudFormation modules to automate infrastructure deployment, IAM role provisioning, and CloudWatch monitoring across multi-tenant cloud environments.</li>
-            <li>Designed automated pre-billing validation engines incorporating deterministic machine learning logic trees for clean claim submissions.</li>
-            <li>Developed real-time RESTful inference microservices using Python and FastAPI to serve model predictions securely to clinical staff.</li>
-            <li>Integrated predictive analytics outputs and clinical performance indicators into interactive Power BI executive dashboards.</li>
-            <li>Implemented continuous AI Risk Management, AI Governance, and LLM evaluation frameworks to enforce enterprise security, data privacy, and HIPAA compliance.</li>
-            <li>Automated resolution of billing errors, boosting first-pass clean claim submission rates and reducing manual touchpoints by 70%.</li>
-            <li>Reduced manual payment posting cycles by 80% and accelerated accounts receivable turnaround times by 45% through automated pipelines.</li>
-            <li>Improved patient intake turnaround by 45% and reduced overall administrative processing overhead by 15% using predictive scoring.</li>
-            <li>Elevated claims data accuracy by 35% through automated code pre-validation and rigorous feature verification checks.</li>
-            <li>Enforced strict HIPAA compliance, role-based access control, and data encryption protocols across all production AI services.</li>
-            <li>Maintained comprehensive technical documentation, model validation reports, and pipeline schemas for cross-functional team handoffs.</li>
-            <b>Environment: Python, SQL, Azure Databricks, PySpark, FastAPI, OpenCV, NextGen PM/EMR, Delta Lake, Scikit-learn, XGBoost, LightGBM, Prophet, spaCy, Hugging Face, Power BI.</b>
-
-        </ul>
-                    
                         
-                        </p>
+                        <ul class="list-disc list-inside space-y-2 text-slate-300 text-sm mb-4 leading-relaxed">
+                            <!-- First 2 bullet points (always visible) --> 
+                            <li>Architected and deployed advanced machine learning models to automate clinical workflows and predictive diagnostics.</li>
+                            <li>Deployed enterprise RAG architectures on AWS utilizing Amazon Bedrock, SageMaker, and Vector Databases.</li>
+                            
+                            <!-- Remaining bullet points hidden by default -->
+                            <div class="more-experience" style="display: none;">
+                                <li>Optimized large-scale data processing pipelines, reducing latency by 35% for production workloads.</li>
+                                <li>Engineered predictive classification and regression models using XGBoost and LightGBM to forecast patient volume trends and appointment no-show risks.</li>
+                                <li>Evaluated multi-cloud deployment strategies including Google Cloud Platform (GCP) and Vertex AI for scalable model training and low-latency inference.</li>
+                                <li>Designed and operationalized enterprise RAG architectures on AWS utilizing Amazon Bedrock, Amazon SageMaker, and Vector Databases to automate clinical policy retrieval and operational workflows.</li>
+                                <li>Engineered high-concurrency, asynchronous Python (Asyncio) microservices using FastAPI and Pydantic v2 data models, securing internal API endpoints via OAuth 2.0 and MSAL (Microsoft Authentication Library).</li>
+                                <li>Optimized distributed feature processing and columnar storage across Delta Lake and Parquet using Ray and PySpark, driving a 35% reduction in model inference latency.</li>
+                                <li>Developed time-series forecasting models using Prophet and statistical algorithms to predict surgical authorization timelines and operational bottlenecks.</li>
+                                <li>Built vision-based OCR processing pipelines using OpenCV, AWS Textract, and Azure Document Intelligence to extract clinical data from unstructured documents.</li>
+                                <li>Fine-tuned transformer-based NLP models using spaCy and Hugging Face to classify clinical EOB remark text and map unstructured entries accurately.</li>
+                                <li>Implemented Agentic AI workflows and Model Context Protocol (MCP) integrations to connect internal LLM endpoints with clinical databases and REST APIs.</li>
+                                <li>Constructed scalable data ingestion and feature engineering pipelines using PySpark and Delta Lake on Azure Databricks for distributed training.</li>
+                                <li>Authored Terraform and CloudFormation modules to automate infrastructure deployment, IAM role provisioning, and CloudWatch monitoring across multi-tenant cloud environments.</li>
+                                <li>Designed automated pre-billing validation engines incorporating deterministic machine learning logic trees for clean claim submissions.</li>
+                                <li>Developed real-time RESTful inference microservices using Python and FastAPI to serve model predictions securely to clinical staff.</li>
+                                <li>Integrated predictive analytics outputs and clinical performance indicators into interactive Power BI executive dashboards.</li>
+                                <li>Implemented continuous AI Risk Management, AI Governance, and LLM evaluation frameworks to enforce enterprise security, data privacy, and HIPAA compliance.</li>
+                                <li>Automated resolution of billing errors, boosting first-pass clean claim submission rates and reducing manual touchpoints by 70%.</li>
+                                <li>Reduced manual payment posting cycles by 80% and accelerated accounts receivable turnaround times by 45% through automated pipelines.</li>
+                                <li>Improved patient intake turnaround by 45% and reduced overall administrative processing overhead by 15% using predictive scoring.</li>
+                                <li>Elevated claims data accuracy by 35% through automated code pre-validation and rigorous feature verification checks.</li>
+                                <li>Enforced strict HIPAA compliance, role-based access control, and data encryption protocols across all production AI services.</li>
+                                <li>Maintained comprehensive technical documentation, model validation reports, and pipeline schemas for cross-functional team handoffs.</li>
+                                <br><b>Environment: Python, SQL, Azure Databricks, PySpark, FastAPI, OpenCV, NextGen PM/EMR, Delta Lake, Scikit-learn, XGBoost, LightGBM, Prophet, spaCy, Hugging Face, Power BI.</b>
+                            </div>
+                        </ul>
+
+                        <!-- Toggle Button -->
+                        <button onclick="toggleExperience(this)" class="see-more-btn text-xs text-cyan-400 font-semibold mb-4 hover:underline">See More</button>
+
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">AWS Bedrock</span>
                             <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">RAG</span>
@@ -225,26 +230,34 @@
                             </div>
                             <span class="text-xs font-semibold bg-slate-800 text-slate-300 px-3 py-1 rounded-full mt-2 md:mt-0 w-fit">Jan 2022 – Dec 2023</span>
                         </div>
-                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">
-                            <li>Designed and implemented distributed machine learning systems on Azure Databricks using PySpark, XGBoost, and Spark MLlib for financial analytics.<li>
+                        
+                        <ul class="list-disc list-inside space-y-2 text-slate-300 text-sm mb-4 leading-relaxed">
+                            <!-- First 2 bullet points (always visible) -->
+                            <li>Designed and implemented distributed machine learning systems on Azure Databricks using PySpark, XGBoost, and Spark MLlib for financial analytics.</li>
                             <li>Architected end-to-end anomaly detection frameworks on high-velocity transaction streams to identify fraudulent account activities in real time.</li>
-                            <li>Orchestrated scalable data pipelines using Azure Data Factory and Kafka streams to ingest high-volume enterprise customer data.</li>
-                            <li>Designed and implemented distributed machine learning systems on Azure Databricks using PySpark, XGBoost, and Spark MLlib for financial analytics. Architected end-to-end anomaly detection frameworks on high-velocity transaction streams to identify fraudulent account activities in real time. Orchestrated scalable data pipelines using Azure Data Factory and Kafka streams to ingest high-volume enterprise customer data. Pioneered NLP classification pipelines utilizing Hugging Face Transformers, spaCy, and NLTK across unstructured financial documents. Built centralized feature store pipelines using MLflow and Delta Lake to standardize feature computation and ensure model reproducibility.</li>
-                            <li>Implemented dynamic schema drift handling mechanisms within ingest pipelines to maintain streaming stability and minimize latency.</li>
-                            <li>Pioneered NLP classification pipelines utilizing Hugging Face Transformers, spaCy, and NLTK across unstructured financial documents.</li>
-                            <li>Containerized model inference and feature calculation microservices using FastAPI, Docker, and Azure App Services.</li>
-                            <li>Established CI/CD automation and automated unit/integration testing suites within Azure DevOps pipelines for rapid ML deployments.</li>
-                            <li>Built centralized feature store pipelines using MLflow and Delta Lake to standardize feature computation and ensure model reproducibility.</li>
-                            <li>Automated statistical profiling, distribution validation, and model explainability checks (SHAP) for internal risk compliance.</li>
-                            <li>Maintained exhaustive model registries and documentation to strictly align with federal banking and financial regulations.</li>
-                            <li>Synthesized predictive scores, confidence intervals, and model performance KPIs into interactive Power BI dashboards for executives.</li>
-                            <li>Spearheaded A/B testing frameworks and experimental design strategies to evaluate model performance and lift in production.</li>
-                            <li>Optimized Spark MLlib job performance using broadcast joins and vectorization, reducing model training runtimes by 35%.</li>
-                            <li>Reduced streaming data processing latency by 25% across high-throughput Kafka feeds through pipeline optimizations.</li>
-                            <li>Accelerated document processing and audit compliance workflows by 40% via automated Transformer-based entity extraction.</li>
-                            <b>Environment: Python, PySpark, Azure Databricks, Azure Data Factory, Delta Lake, Spark MLlib, Scikit-learn, XGBoost, spaCy, NLTK, Hugging Face Transformers, FastAPI, Docker, Power BI, SQL Server, MLflow, Azure DevOps.</b>
+                            
+                            <!-- Remaining bullet points hidden by default -->
+                            <div class="more-experience" style="display: none;">                         
+                                <li>Orchestrated scalable data pipelines using Azure Data Factory and Kafka streams to ingest high-volume enterprise customer data.</li>
+                                <li>Pioneered NLP classification pipelines utilizing Hugging Face Transformers, spaCy, and NLTK across unstructured financial documents.</li>
+                                <li>Implemented dynamic schema drift handling mechanisms within ingest pipelines to maintain streaming stability and minimize latency.</li>
+                                <li>Containerized model inference and feature calculation microservices using FastAPI, Docker, and Azure App Services.</li>
+                                <li>Established CI/CD automation and automated unit/integration testing suites within Azure DevOps pipelines for rapid ML deployments.</li>
+                                <li>Built centralized feature store pipelines using MLflow and Delta Lake to standardize feature computation and ensure model reproducibility.</li>
+                                <li>Automated statistical profiling, distribution validation, and model explainability checks (SHAP) for internal risk compliance.</li>
+                                <li>Maintained exhaustive model registries and documentation to strictly align with federal banking and financial regulations.</li>
+                                <li>Synthesized predictive scores, confidence intervals, and model performance KPIs into interactive Power BI dashboards for executives.</li>
+                                <li>Spearheaded A/B testing frameworks and experimental design strategies to evaluate model performance and lift in production.</li>
+                                <li>Optimized Spark MLlib job performance using broadcast joins and vectorization, reducing model training runtimes by 35%.</li>
+                                <li>Reduced streaming data processing latency by 25% across high-throughput Kafka feeds through pipeline optimizations.</li>
+                                <li>Accelerated document processing and audit compliance workflows by 40% via automated Transformer-based entity extraction.</li>
+                                <br><b>Environment: Python, PySpark, Azure Databricks, Azure Data Factory, Delta Lake, Spark MLlib, Scikit-learn, XGBoost, spaCy, NLTK, Hugging Face Transformers, FastAPI, Docker, Power BI, SQL Server, MLflow, Azure DevOps.</b>
+                            </div>
+                        </ul>
 
-                        </p>
+                        <!-- Toggle Button -->
+                        <button onclick="toggleExperience(this)" class="see-more-btn text-xs text-blue-400 font-semibold mb-4 hover:underline">See More</button>
+
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Azure Databricks</span>
                             <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Kafka</span>
@@ -255,35 +268,42 @@
 
                     <!-- Wayfair -->
                     <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl relative pl-8 md:pl-10">
-                        <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-indigo-500 rounded-l-2xl"></div>
+                        <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-green-500 rounded-l-2xl"></div>
                         <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
                             <div>
                                 <h3 class="text-xl font-bold text-white">Senior Data Scientist / AI Engineer</h3>
-                                <p class="text-indigo-400 font-medium">Wayfair – Boston, MA</p>
+                                <p class="text-green-400 font-medium">Wayfair – Boston, MA</p>
                             </div>
                             <span class="text-xs font-semibold bg-slate-800 text-slate-300 px-3 py-1 rounded-full mt-2 md:mt-0 w-fit">Jan 2020 – Dec 2021</span>
                         </div>
-                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">
-                            <li>Designed end-to-end machine learning workflows using Scikit-learn, XGBoost, and LightGBM to detect high-risk e-commerce transactions. Orchestrated Generative AI workflows using LangChain, LlamaIndex, and Hugging Face.</li>
+                        
+                        <ul class="list-disc list-inside space-y-2 text-slate-300 text-sm mb-4 leading-relaxed">
+                            <!-- First 2 bullet points (always visible) -->
+                            <li>Designed end-to-end machine learning workflows using Scikit-learn, XGBoost, and LightGBM to detect high-risk e-commerce transactions.</li>
                             <li>Developed custom feature engineering pipelines to extract behavioral patterns and device fingerprints from customer purchase histories.</li>
-                            <li>Built NLP pipelines using spaCy, Hugging Face Transformers, and NLTK to parse customer reviews and support tickets for sentiment analysis.</li>
-                            <li>Constructed distributed PySpark and SQL pipelines on Delta Lake to process high-volume customer session and clickstream data.</li>
-                            <li>Engineered batch and real-time model scoring engines to deliver instant checkout risk evaluations without latency bottlenecks.</li>
-                            <li>Orchestrated Generative AI workflows using LangChain, LlamaIndex, and Hugging Face to parse customer tickets, execute real-time intent classification, and feed downstream agent toolkits</li>
-                            <li>Deployed low-latency inference microservices using Docker, Kubernetes (AKS/EKS), FastAPI, and REST APIs for real-time risk scoring.</li>
-                            <li>Integrated MLflow and Azure Monitor to continuously track model accuracy, performance stability, and drift in production.</li>
-                            <li>Built automated drift detection scripts to monitor data distribution shifts and trigger retraining workflows when thresholds were breached.</li>
-                            <li>Conducted GenAI prompt engineering proofs-of-concept to summarize long customer interaction threads and assist support agents.</li>
-                            <li>Built interactive Power BI and Tableau dashboards to visualize fraud loss trends, model confidence scores, and return metrics.</li>
-                            <li>Collaborated with cross-functional risk and payments teams to align model predictions with business operational strategies.</li>
-                            <li>Reduced fraudulent order processing overhead by 22% while maintaining exceptionally low false-positive rates.</li>
-                            <li>Orchestrated Generative AI workflows using LangChain, LlamaIndex, and Hugging Face to parse support tickets, execute real-time intent classification, and perform prompt engineering proofs-of-concept for automated customer interaction summaries.</li>
-                            <li>Accelerated model training cycles by 30% through PySpark partition optimization and Delta Lake storage pattern refinements.</li>
-                            <li>Improved support ticket triage velocity by 35% using automated Transformer-based intent mapping and entity extraction.</li>
-                            <li>Enforced robust data governance frameworks to ensure customer data handling complied fully with GDPR and CCPA standards.</li>
-                            <b>Environment: Python, Scikit-learn, XGBoost, LightGBM, spaCy, Hugging Face, Pandas, NumPy, SQL, Spark, PySpark, Delta Lake, MLflow, Azure Monitor, Docker, Kubernetes, FastAPI, Power BI, Tableau.</b>
+                           
+                            <!-- Remaining bullet points hidden by default -->
+                            <div class="more-experience" style="display: none;">
+                                <li>Built NLP pipelines using spaCy, Hugging Face Transformers, and NLTK to parse customer reviews and support tickets for sentiment analysis.</li>
+                                <li>Constructed distributed PySpark and SQL pipelines on Delta Lake to process high-volume customer session and clickstream data.</li>
+                                <li>Engineered batch and real-time model scoring engines to deliver instant checkout risk evaluations without latency bottlenecks.</li>
+                                <li>Orchestrated Generative AI workflows using LangChain, LlamaIndex, and Hugging Face to parse customer tickets, execute real-time intent classification, and feed downstream agent toolkits.</li>
+                                <li>Deployed low-latency inference microservices using Docker, Kubernetes (AKS/EKS), FastAPI, and REST APIs for real-time risk scoring.</li>
+                                <li>Integrated MLflow and Azure Monitor to continuously track model accuracy, performance stability, and drift in production.</li>
+                                <li>Built automated drift detection scripts to monitor data distribution shifts and trigger retraining workflows when thresholds were breached.</li>
+                                <li>Conducted GenAI prompt engineering proofs-of-concept to summarize long customer interaction threads and assist support agents.</li>
+                                <li>Built interactive Power BI and Tableau dashboards to visualize fraud loss trends, model confidence scores, and return metrics.</li>
+                                <li>Collaborated with cross-functional risk and payments teams to align model predictions with business operational strategies.</li>
+                                <li>Reduced fraudulent order processing overhead by 22% while maintaining exceptionally low false-positive rates.</li>
+                                <li>Accelerated model training cycles by 30% through PySpark partition optimization and Delta Lake storage pattern refinements.</li>
+                                <li>Improved support ticket triage velocity by 35% using automated Transformer-based intent mapping and entity extraction.</li>
+                                <li>Enforced robust data governance frameworks to ensure customer data handling complied fully with GDPR and CCPA standards.</li>
+                                <br><b>Environment: Python, Scikit-learn, XGBoost, LightGBM, spaCy, Hugging Face, Pandas, NumPy, SQL, Spark, PySpark, Delta Lake, MLflow, Azure Monitor, Docker, Kubernetes, FastAPI, Power BI, Tableau.</b>
+                            </div>
+                        </ul>
 
-                        </p>
+                        <!-- Toggle Button -->
+                        <button onclick="toggleExperience(this)" class="see-more-btn text-xs text-green-400 font-semibold mb-4 hover:underline">See More</button>
 
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">LangChain</span>
@@ -303,25 +323,34 @@
                             </div>
                             <span class="text-xs font-semibold bg-slate-800 text-slate-300 px-3 py-1 rounded-full mt-2 md:mt-0 w-fit">May 2018 – Dec 2019</span>
                         </div>
-                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                        
+                        <ul class="list-disc list-inside space-y-2 text-slate-300 text-sm mb-4 leading-relaxed">
+                            <!-- First 2 bullet points (always visible) -->
                             <li>Modernized telecom data pipelines using Python, SQL Server, SSIS, and Azure Storage to ingest high-volume network performance logs.</li>
                             <li>Developed predictive models and time-series algorithms in Python using Pandas, NumPy, and Scikit-learn for subscriber churn scoring.</li>
-                            <li>Formulated network traffic load estimation models to help infrastructure teams proactively optimize bandwidth and cell capacity.</li>
-                            <li>Engineered scalable data transformation workflows, star schema data marts, and indexed SQL views for analytical query processing.</li>
-                            <li>Built automated statistical validation and schema drift checks using Python scripts and SQL constraints to maintain pipeline integrity.</li>
-                            <li>secure RESTful microservices in Python with role-based access controls to serve model predictions to internal tools.</li>
-                            <li>Designed and executed automated ETL validation test suites to verify data accuracy across legacy and cloud environments.</li>
-                            <li>Built interactive Power BI dashboards using DAX to visualize network performance KPIs and customer retention trends.</li>
-                            <li>Partnered with business analysts to convert complex telecommunications insights into actionable subscriber retention strategies.</li>
-                            <li>Optimized SQL Server stored procedures and query indexing strategies to significantly streamline database read/write performance.</li>
-                            <li>Reduced batch ETL processing windows by 28% through advanced SQL query tuning and pipeline architectural redesign.</li>
-                            <li>Enhanced predictive model reliability, enabling retention teams to target high-risk subscriber accounts with targeted campaigns.</li>
-                            <li>Accelerated daily operational reporting cycles by 35% through automated dimensional updates and scheduled orchestration.</li>
-                            <li>Managed database access controls and security protocols to safeguard sensitive customer usage data and proprietary metrics.</li>
-                            <li>Maintained detailed technical documentation for all ML models, ETL pipelines, and microservice integration endpoints.</li>
-                            <b>Environment: Python, SQL Server, SSIS, Pandas, NumPy, Scikit-learn, REST APIs, Power BI, DAX, Stored Procedures, Index Optimization, Azure Storage, Git.</b>
+                            
+                            <!-- Remaining bullet points hidden by default -->
+                            <div class="more-experience" style="display: none;">
+                                <li>Formulated network traffic load estimation models to help infrastructure teams proactively optimize bandwidth and cell capacity.</li>
+                                <li>Engineered scalable data transformation workflows, star schema data marts, and indexed SQL views for analytical query processing.</li>
+                                <li>Built automated statistical validation and schema drift checks using Python scripts and SQL constraints to maintain pipeline integrity.</li>
+                                <li>Secured RESTful microservices in Python with role-based access controls to serve model predictions to internal tools.</li>
+                                <li>Designed and executed automated ETL validation test suites to verify data accuracy across legacy and cloud environments.</li>
+                                <li>Built interactive Power BI dashboards using DAX to visualize network performance KPIs and customer retention trends.</li>
+                                <li>Partnered with business analysts to convert complex telecommunications insights into actionable subscriber retention strategies.</li>
+                                <li>Optimized SQL Server stored procedures and query indexing strategies to significantly streamline database read/write performance.</li>
+                                <li>Reduced batch ETL processing windows by 28% through advanced SQL query tuning and pipeline architectural redesign.</li>
+                                <li>Enhanced predictive model reliability, enabling retention teams to target high-risk subscriber accounts with targeted campaigns.</li>
+                                <li>Accelerated daily operational reporting cycles by 35% through automated dimensional updates and scheduled orchestration.</li>
+                                <li>Managed database access controls and security protocols to safeguard sensitive customer usage data and proprietary metrics.</li>
+                                <li>Maintained detailed technical documentation for all ML models, ETL pipelines, and microservice integration endpoints.</li>
+                                <br><b>Environment: Python, SQL Server, SSIS, Pandas, NumPy, Scikit-learn, REST APIs, Power BI, DAX, Stored Procedures, Index Optimization, Azure Storage, Git.</b>
+                            </div>
+                        </ul>
 
-                        </p>
+                        <!-- Toggle Button -->
+                        <button onclick="toggleExperience(this)" class="see-more-btn text-xs text-purple-400 font-semibold mb-4 hover:underline">See More</button>
+
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Python</span>
                             <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">SQL Server</span>
@@ -340,26 +369,35 @@
                             </div>
                             <span class="text-xs font-semibold bg-slate-800 text-slate-300 px-3 py-1 rounded-full mt-2 md:mt-0 w-fit">June 2010 – May 2016</span>
                         </div>
-                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                        
+                        <ul class="list-disc list-inside space-y-2 text-slate-300 text-sm mb-4 leading-relaxed">
+                            <!-- First 2 bullet points (always visible) -->
                             <li>Architected fault-tolerant batch and near-real-time data processing pipelines on AWS EMR using Spark and PySpark for retail datasets.</li> 
-                            <li>time-series features and applied XGBoost and Scikit-learn models to optimize regional inventory allocation.</li>
-                            <li>Formulated dynamic marketplace pricing models using historical sales data and demand fluctuation analytics to maximize profit margins.</li>
-                            <li>Optimized distributed processing performance by restructuring join strategies on AWS EMR and converting feeds into Parquet formats.</li>
-                            <li>Built serverless microservices using AWS Lambda, API Gateway, DynamoDB, and Step Functions to orchestrate downstream ML pipelines.</li>
-                            <li>Implemented automated schema validation and monitoring scripts integrated with AWS CloudWatch to ensure high data integrity.</li>
-                            <li>Established automated data quality alerts to identify missing values, schema mismatches, and pipeline execution failures.</li>
-                            <li>Partnered with product and engineering teams to establish cloud platform best practices and standardize data science deployments.</li>
-                            <li>Constructed centralized data repository architectures using AWS S3 and Redshift to consolidate store sales and inventory data.</li>
-                            <li>Designed custom SQL queries and analytical data views to support ad-hoc reporting requests from retail category managers.</li>
-                            <li>Automated serverless cloud architecture provisioning (AWS Lambda, API Gateway, Amazon S3) using AWS CloudFormation and Terraform pipelines.</li>
-                            <li>Built interactive QuickSight dashboards to provide management with visibility into real-time inventory and sales velocity.</li>
-                            <li>Reduced EMR cluster processing runtimes and compute costs by 30% through Parquet partitioning and join optimizations.</li>
-                            <li>Improved demand forecasting accuracy, driving optimal stock levels and reducing stockout occurrences across store categories.</li>
-                            <li>Achieved 99.9% data pipeline availability across supply chain workflows through automated CloudWatch alerting and validation.</li>
-                            <li>Participated in full SDLC following Agile methodologies, conducting code reviews and sprint planning session.</li>
-                            <b>Environment: Python, SQL, AWS EMR, Spark, PySpark, AWS S3, AWS Lambda, API Gateway, DynamoDB, Step Functions, CloudWatch, Parquet, Redshift, QuickSight, Git, Linux, Jira.</b>
+                            <li>Engineered time-series features and applied XGBoost and Scikit-learn models to optimize regional inventory allocation.</li>
+                            
+                            <!-- Remaining bullet points hidden by default -->
+                            <div class="more-experience" style="display: none;">
+                                <li>Formulated dynamic marketplace pricing models using historical sales data and demand fluctuation analytics to maximize profit margins.</li>
+                                <li>Optimized distributed processing performance by restructuring join strategies on AWS EMR and converting feeds into Parquet formats.</li>
+                                <li>Built serverless microservices using AWS Lambda, API Gateway, DynamoDB, and Step Functions to orchestrate downstream ML pipelines.</li>
+                                <li>Implemented automated schema validation and monitoring scripts integrated with AWS CloudWatch to ensure high data integrity.</li>
+                                <li>Established automated data quality alerts to identify missing values, schema mismatches, and pipeline execution failures.</li>
+                                <li>Partnered with product and engineering teams to establish cloud platform best practices and standardize data science deployments.</li>
+                                <li>Constructed centralized data repository architectures using AWS S3 and Redshift to consolidate store sales and inventory data.</li>
+                                <li>Designed custom SQL queries and analytical data views to support ad-hoc reporting requests from retail category managers.</li>
+                                <li>Automated serverless cloud architecture provisioning (AWS Lambda, API Gateway, Amazon S3) using AWS CloudFormation and Terraform pipelines.</li>
+                                <li>Built interactive QuickSight dashboards to provide management with visibility into real-time inventory and sales velocity.</li>
+                                <li>Reduced EMR cluster processing runtimes and compute costs by 30% through Parquet partitioning and join optimizations.</li>
+                                <li>Improved demand forecasting accuracy, driving optimal stock levels and reducing stockout occurrences across store categories.</li>
+                                <li>Achieved 99.9% data pipeline availability across supply chain workflows through automated CloudWatch alerting and validation.</li>
+                                <li>Participated in full SDLC following Agile methodologies, conducting code reviews and sprint planning sessions.</li>
+                                <br><b>Environment: Python, SQL, AWS EMR, Spark, PySpark, AWS S3, AWS Lambda, API Gateway, DynamoDB, Step Functions, CloudWatch, Parquet, Redshift, QuickSight, Git, Linux, Jira.</b>
+                            </div>
+                        </ul>
 
-                        </p>
+                        <!-- Toggle Button -->
+                        <button onclick="toggleExperience(this)" class="see-more-btn text-xs text-emerald-400 font-semibold mb-4 hover:underline">See More</button>
+
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">AWS EMR</span>
                             <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">PySpark</span>
@@ -367,11 +405,12 @@
                             <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Terraform</span>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        
+  
         <!-- PROJECTS / EXPERIENCE SECTION -->
     <section id="experience" class="py-16 px-4 max-w-5xl mx-auto">
         <div id="projects">
